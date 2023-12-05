@@ -4,12 +4,16 @@
 }
 
 body {
-    font-family: 'NorseBold', fallback, sans-serif;
+    font-family: fallback, sans-serif;
     font-size: 21px;
     display: flex;
     flex-direction: row;
     min-height: 844px;
     margin: 0;
+}
+
+button{
+    cursor: pointer;
 }
 
 .bold {
@@ -50,6 +54,7 @@ body {
 }
 
 .logo-container > span {
+    font-family: 'NorseBold', fallback, sans-serif;
     color: white;
     font-size: 100px;  
 }
@@ -62,7 +67,7 @@ body {
 }
 
 .right-body > div {
-    width: 50vw;
+    width: 66vw;
     min-width: 250px;
     padding: 0 3vw 30px 3vw;
 }
@@ -110,6 +115,14 @@ label {
     padding: 6px;
 }
 
+.form-group > p > input:focus {
+    outline: solid blue 1px;
+}
+
+.form-group > p > input.input-error {
+    outline: solid red 1px;
+}
+
 .right-body > .lower-section {
     padding: 20px 3vw 0 3vw;
 }
@@ -127,7 +140,20 @@ label {
     font-size: 15px;
 }
 
-.lower-section > p > span {
+.lower-section > p > button {
     color: #596D48;
     font-weight: bold;
+    border: none;
+    background-color: transparent;
+}
+
+div.password-1 {
+    position: relative;
+}
+
+#password-error-message {
+    position: absolute;
+    color: red;
+    font-size: 10px;
+    margin-top: 5px;
 }
