@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+}
+
+body {
+    font-family: 'NorseBold', fallback, sans-serif;
+    font-size: 21px;
+    display: flex;
+    flex-direction: row;
+    min-height: 844px;
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3vw 0 3vw;
+    background-color: black;
+    
+}
+
+.left-body > * {
+    width: 33vw;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+.main-img {
+    aspect-ratio: 1 / 1;
+}
+
+.right-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAFB;
+    margin: 0;
+}
+
+.right-body > div {
+    width: 50vw;
+    min-width: 250px;
+    padding: 0 3vw 30px 3vw;
+}
+
+.upper-section {
+    margin-top: 140px;
+}
+
+.upper-section > p {
+    max-width: 47.5vw;
+}
+
+.middle-section {
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+.middle-section > p {
+    color: #222C3A;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-legend {
+    margin: 18px 0 18px 0;
+}
+
+label {
+    color: #4F5762;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form-group > p {
+    margin: 0;
+}
+
+.form-group > p > input {
+    border: solid #F1F2F3 1px;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.right-body > .lower-section {
+    padding: 20px 3vw 0 3vw;
+}
+
+.btn-submit {
+    background-color: #596D48;
+    color: #F5F6F4;   
+    font-weight: bold;
+    padding: 15px 45px;    
+    border: none;
+    border-radius: 5px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+}
+
+.lower-section > p {
+    font-size: 15px;
+}
+
+.lower-section > p > span {
+    color: #596D48;
+    font-weight: bold;
+}
